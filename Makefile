@@ -11,4 +11,10 @@ components: component.json
 clean:
 	rm -fr build components template.js
 
+jade:
+	@jade --pretty . --obj component.json --watch
+
+livereload:
+	@livereload -p 8888
+
 .PHONY: clean
